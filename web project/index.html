@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Appointment Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hospital Appointment Booking</h1>
+
+  <form id="appointmentForm">
+    <input type="hidden" id="appointmentId">
+    <input type="text" id="patientName" placeholder="Patient Name" required />
+    <input type="text" id="doctorName" placeholder="Doctor Name" required />
+    <input type="datetime-local" id="appointmentTime" required />
+    <button type="submit">Save Appointment</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Time</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="appointmentList"></tbody>
+  </table>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
